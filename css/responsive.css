@@ -1,0 +1,206 @@
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .movie-card {
+        min-width: 180px;
+    }
+    
+    .movie-card-image {
+        height: 270px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 15px 30px;
+    }
+    
+    .header.scrolled {
+        padding: 10px 30px;
+    }
+    
+    .hero {
+        padding: 0 30px;
+        height: 70vh;
+    }
+    
+    .main-content {
+        padding: 0 30px 30px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+    
+    .header.scrolled {
+        padding: 10px 20px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .hero {
+        height: 60vh;
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .email-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .email-input {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .cta-button {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+    
+    .main-content {
+        padding: 0 20px 20px;
+    }
+    
+    .movie-card {
+        min-width: 150px;
+    }
+    
+    .movie-card-image {
+        height: 225px;
+    }
+    
+    .slider-btn {
+        display: none;
+    }
+    
+    .footer {
+        padding: 30px 0 20px;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        height: 25px;
+    }
+    
+    .hero {
+        height: 50vh;
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .main-content {
+        padding: 0 15px 15px;
+    }
+    
+    .movie-card {
+        min-width: 120px;
+    }
+    
+    .movie-card-image {
+        height: 180px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-column {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .slider-btn {
+        opacity: 1;
+        background: rgba(0,0,0,0.5);
+    }
+    
+    .movie-card-info {
+        opacity: 1;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    }
+    
+    .search-box.active .search-input {
+        width: 150px;
+    }
+}
+
+/* High DPI Displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .slider-container {
+        scroll-behavior: auto;
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "categories": [
+    {
+      "name": "trending",
+      "title": "Trending Now",
+      "movies": [
+        {
+          "id": 1,
+          "title": "Stranger Things",
+          "image": "images/thumbnails/stranger-things.jpg",
+          "year": 2024,
+          "rating": "TV-14",
+          "genre": "Sci-Fi & Horror",
+          "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments.",
+          "cast": ["Millie Bobby Brown", "Finn Wolfhard", "David Harbour"],
+          "duration": 51
+        }
+      ]
+    }
+  ]
+}
